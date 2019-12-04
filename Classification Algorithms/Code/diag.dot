@@ -1,0 +1,31 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="overcast", fillcolor="#fefdff"] ;
+
+1 [label="class = 1", fillcolor="#f3ecfc"] ;
+0 -> 1 [labeldistance=2.5, labelangle=-45, headlabel="True"] ;
+2 [label="high", fillcolor="#f3ecfc"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="rain", fillcolor="#bef7d6"] ;
+2 -> 3 [labeldistance=2.5, labelangle=-45, headlabel="True"] ;
+4 [label="Strong", fillcolor="#bef7d6"] ;
+2 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="class = 0", fillcolor="#f3ecfc"] ;
+3 -> 5 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+6 [label="Strong", fillcolor="#bef7d6"] ;
+3 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="True"] ;
+7 [label="class = 1", fillcolor="#f3ecfc"] ;
+8 [label="class = 0", fillcolor="#f3ecfc"] ;
+6 -> 7 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+6-> 8 [labeldistance=2.5, labelangle=-45, headlabel="True"] ;
+9 [label="class = 1", fillcolor="#f3ecfc"] ;
+4-> 9 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+10 [label="Cool", fillcolor="#bef7d6"] ;
+4 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="True"] ;
+11 [label="class = 1", fillcolor="#f3ecfc"] ;
+12 [label="class = 0", fillcolor="#f3ecfc"] ;
+10 -> 11 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+10 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="True"] ;
+
+}
